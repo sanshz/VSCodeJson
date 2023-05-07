@@ -1,7 +1,7 @@
 # VscodeProjectConfigFiles
 This repo contains my Visual Studio Code Configuration files for projects
 
-Directory Structure
+Directory Structure for C++
 
      workspaceFolder
 
