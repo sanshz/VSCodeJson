@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe build active file",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+                "/I${workspaceFolder}\\Source\\Private",
+                "/I${workspaceFolder}\\Source\\Public",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\bin\\intermediates"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task generated , Custom task.json ."
+        }
+    ],
+    "version": "2.0.0"
+}
