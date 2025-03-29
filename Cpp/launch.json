@@ -7,9 +7,9 @@
       "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}\\bin",
+      "cwd": "${fileDirname}",
       "environment": [],
-      "console": "externalTerminal",
+      "console": "integratedTerminal",
       "preLaunchTask": "C/C++: cl.exe build active file"
     }
   ],
