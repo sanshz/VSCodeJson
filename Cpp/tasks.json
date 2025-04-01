@@ -8,15 +8,14 @@
         "/Zi",
         "/EHsc",
         "/nologo",
-        "/I",
-        "${workspaceFolder}\\source",
-        "/Fo${workspaceFolder}\\bin\\intermediates\\${fileBasenameNoExtension}.obj",
+        "/I${workspaceFolder}\\source\\private\\",
+        "/I${workspaceFolder}\\source\\public\\",
         "/Fe${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
         "/permissive",
         "/Wall",
         "/WX",
         "/std:c++latest",
-        "${file}"
+        "${fileDirname}/**.cpp"
       ],
       "options": {
         "cwd": "${workspaceFolder}\\bin\\intermediates"
