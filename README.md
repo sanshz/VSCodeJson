@@ -1,14 +1,15 @@
-# VscodeProjectConfigFiles
-This repo contains my Visual Studio Code Configuration files for projects
-
+# VSCodeJson
+This repo contains my Visual Studio Code .json files
 Directory Structure for C++
 
 ```
 workspaceFolder
 ├── .vscode
-├── Bin
-│   └── Intermediates
-└── Source
-     ├── Private
-     └── Public
+├── bin
+│   └── intermediates
+├── include
+├── lib
+└── src
+     ├── private
+     └── public
 ```

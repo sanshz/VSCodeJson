@@ -5,20 +5,19 @@
       "label": "C/C++: cl.exe build active file",
       "command": "cl.exe",
       "args": [
-        "/Zi",
-        "/EHsc",
-        "/nologo",
-        "/I${workspaceFolder}\\source\\private\\",
-        "/I${workspaceFolder}\\source\\public\\",
+        "/Zi", "/EHsc", "/nologo", "/MDd",
+        "/I${workspaceFolder}\\src\\",
+        "/I${workspaceFolder}\\include\\",
+        "${fileDirname}/**.cpp",
         "/Fe${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
-        "/permissive",
-        "/Wall",
-        "/WX",
         "/std:c++latest",
-        "${fileDirname}/**.cpp"
+        "/link",
+        "/LIBPATH:${workspaceFolder}\\lib\\",
+        "raylib\\raylib.lib",
+        "winmm.lib", "gdi32.lib", "opengl32.lib", "user32.lib", "kernel32.lib", "shell32.lib", "advapi32.lib", "ucrt.lib"
       ],
       "options": {
-        "cwd": "${workspaceFolder}\\bin\\intermediates"
+        "cwd": "${workspaceFolder}\\bin\\intermediates\\"
       },
       "problemMatcher": [
         "$msCompile"
