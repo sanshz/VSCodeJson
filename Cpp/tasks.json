@@ -2,7 +2,7 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: cl.exe build active file",
+      "label": "C/C++: cl.exe build (dev)",
       "command": "cl.exe",
       "args": [
         "/Zi", "/EHsc", "/nologo", "/MDd",
@@ -10,6 +10,7 @@
         "/I${workspaceFolder}\\include\\",
         "${fileDirname}/**.cpp",
         "/Fe${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+        "/permissive", "/Wall", "/WX",
         "/std:c++latest",
         "/link",
         "/LIBPATH:${workspaceFolder}\\lib\\",
