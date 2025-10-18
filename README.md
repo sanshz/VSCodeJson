@@ -8,7 +8,7 @@ workspaceFolder
 ├── bin
 │   └── intermediates
 ├── include
-├── lib
+├── libs
 └── src
      ├── private
      └── public
